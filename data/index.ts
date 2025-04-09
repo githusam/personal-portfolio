@@ -6,16 +6,18 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const gridItems = [
   {
     id: 1,
     title:
-      "Code is only as strong as the teamwork behind it—clarity and collaboration come first.",
+      "Code is only as strong as the teamwork behind it — clarity and collaboration come first.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: `${basePath}/b1.svg`,
     spareImg: "",
   },
   {
@@ -45,8 +47,8 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: `${basePath}/grid.svg`,
+    spareImg: `${basePath}/b4.svg`,
   },
 
   {
@@ -56,8 +58,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: `${basePath}/b5.svg`,
+    spareImg: `${basePath}/grid.svg`,
   },
   {
     id: 6,
@@ -76,13 +78,13 @@ export const projects = [
     id: 1,
     title: "Large Language Model Analyzer",
     des: "A comprehensive tool for analyzing and visualizing large language models.",
-    img: "/p1.png",
+    img: `${basePath}/p1.png`,
     iconLists: [
-      "/re.svg",
-      "/tail.svg",
-      "/ts.svg",
-      "/pythonlogo.png",
-      "/gpt.png",
+      `${basePath}/re.svg`,
+      `${basePath}/tail.svg`,
+      `${basePath}/ts.svg`,
+      `${basePath}/pythonlogo.png`,
+      `${basePath}/gpt.png`,
     ],
     link: "https://github.com/ArjunB3hl/prompt-app/tree/main",
   },
@@ -90,21 +92,27 @@ export const projects = [
     id: 2,
     title: "TMUsic - Music Social App",
     des: "A social media platform for music lovers to connect and share their tracks.",
-    img: "/p2.png",
-    iconLists: ["re.svg", "php.svg", "tail.svg", "ts.svg", "/sql.png"],
+    img: `${basePath}/p2.png`,
+    iconLists: [
+      `${basePath}/re.svg`,
+      `${basePath}/php.svg`,
+      `${basePath}/tail.svg`,
+      `${basePath}/ts.svg`,
+      `${basePath}/sql.png`,
+    ],
     link: "https://github.com/vijaysatchi/tmu-music",
   },
   {
     id: 3,
     title: "Greenspace Management System",
     des: "A comprehensive urban management system for greenspaces.",
-    img: "/p3.png",
+    img: `${basePath}/p3.png`,
     iconLists: [
-      "/re.svg",
-      "/javascript.png",
-      "/pythonlogo.png",
-      "/sql.png",
-      "/docker.png",
+      `${basePath}/re.svg`,
+      `${basePath}/javascript.png`,
+      `${basePath}/pythonlogo.png`,
+      `${basePath}/sql.png`,
+      `${basePath}/docker.png`,
     ],
     link: "https://github.com/githusam/Greenspace-Management-System",
   },
@@ -112,8 +120,8 @@ export const projects = [
     id: 4,
     title: "Weather Application",
     des: "A simple weather application that provides real-time weather updates.",
-    img: "/p4.png",
-    iconLists: ["/re.svg", "/javascript.png", "/node.png"],
+    img: `${basePath}/p4.png`,
+    iconLists: [`${basePath}/re.svg`, `${basePath}/javascript.png`, `${basePath}/node.png`],
     link: "https://github.com/githusam/weather-app",
   },
 ];
@@ -190,7 +198,7 @@ export const workExperience = [
     title: "Fullstack Developer Intern @ Kenna",
     desc: "I worked on a project that involved  and maintaining a web application using React and Node.js. I was responsible for implementing the frontend and backend features, as well as integrating APIs. I also collaborated with the design team to ensure a seamless user experience. I learned a lot about web development best practices and gained valuable experience in working with a team.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: `${basePath}/exp1.svg`,
   },
 ];
 

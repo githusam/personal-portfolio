@@ -11,6 +11,8 @@ import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const BentoGrid = ({
   className,
   children,
@@ -71,19 +73,19 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
-const handleDownload = () => {
-  const resumeUrl = "/Husam_Kassab_Resume.pdf"; // Path to your resume file in the public folder
-  const link = document.createElement("a");
-  link.href = resumeUrl;
-  link.download = "Husam_Kassab_Resume.pdf"; // Optional: Set the downloaded file name
-  link.click();
+  const handleDownload = () => {
+    const resumeUrl = "/Husam_Kassab_Resume.pdf"; // Path to your resume file in the public folder
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Husam_Kassab_Resume.pdf"; // Optional: Set the downloaded file name
+    link.click();
 
-  // Update the copied state to true
-  setCopied(true);
+    // Update the copied state to true
+    setCopied(true);
 
-  // Optionally reset the state after a delay
-  setTimeout(() => setCopied(false), 3000); // Reset after 3 seconds
-};
+    // Optionally reset the state after a delay
+    setTimeout(() => setCopied(false), 3000); // Reset after 3 seconds
+  };
   return (
     <div
       className={cn(
@@ -104,7 +106,7 @@ const handleDownload = () => {
         <div className="w-full h-full absolute">
           {img && (
             <img
-              src={img}
+              src={`${basePath}/{img}`}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
             />
@@ -117,7 +119,7 @@ const handleDownload = () => {
         >
           {spareImg && (
             <img
-              src={spareImg}
+              src={`${basePath}/{spareImg}`}
               alt={spareImg}
               //   width={220}
               className="object-cover object-center w-full h-full"
