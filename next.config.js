@@ -3,13 +3,13 @@
  */
 
 const nextConfig = {
-  basePath: "/personal-portfolio",
-  assetPrefix: "/personal-portfolio/",
+  basePath: "",
+  assetPrefix: "",
   trailingSlash: true,
   output: "export",
   distDir: "dist",
   env: {
-    NEXT_PUBLIC_BASE_PATH: "/personal-portfolio",
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 };
 
