@@ -2,10 +2,9 @@
  * @type {import('next').NextConfig}
  */
 
-const isProd = (process.env.NODE_ENV = "production");
 const nextConfig = {
-  basePath: isProd ? "/personal-portfolio" : "",
-  assetPrefix: isProd ? "/personal-portfolio/" : "",
+  basePath: "/personal-portfolio",
+  assetPrefix: "/personal-portfolio/",
   trailingSlash: true,
   output: "export",
   distDir: "dist",
