@@ -9,7 +9,7 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "Great code means nothing without great communication — I prioritize clarity, teamwork, and building real value",
+      "Code is only as strong as the teamwork behind it—clarity and collaboration come first.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -186,45 +186,23 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Fullstack Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Fullstack Developer Intern @ Kenna",
+    desc: "I worked on a project that involved  and maintaining a web application using React and Node.js. I was responsible for implementing the frontend and backend features, as well as integrating APIs. I also collaborated with the design team to ensure a seamless user experience. I learned a lot about web development best practices and gained valuable experience in working with a team.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
 ];
+
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/githusam"
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/husamkassab/",
   },
 ];

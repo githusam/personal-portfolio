@@ -2,6 +2,7 @@ import React from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Experience = () => {
   return (
@@ -10,7 +11,7 @@ const Experience = () => {
         My <span className="text-purple">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 flex flex-wrap justify-center gap-10">
         {workExperience.map((card) => (
           <Button
             key={card.id}
@@ -29,6 +30,19 @@ const Experience = () => {
             // remove bg-white dark:bg-slate-900
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
+            {/* Moved link & arrow to absolute top-right */}
+            <div className="absolute top-2 right-2 flex items-center">
+              <a
+                href="https://kenna.ca"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="lg:text-xl md:text-sm text-sm text-purple hover:underline"
+              >
+                More Info
+              </a>
+              <FaLocationArrow className="ms-2" color="#CBACF9" />
+            </div>
+
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
                 src={card.thumbnail}
