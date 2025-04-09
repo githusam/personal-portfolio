@@ -29,7 +29,7 @@ const RecentProjects = () => {
                   <img src={`${basePath}/bg.png`} alt="bgimg" />
                 </div>
                 <img
-                  src={`${basePath}/{item.img}`}
+                  src={item.img}
                   alt="cover"
                   className="z-10 absolute bottom-0"
                 />
