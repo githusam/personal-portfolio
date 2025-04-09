@@ -4,6 +4,8 @@ import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 import { FaLocationArrow } from "react-icons/fa6";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const Experience = () => {
   return (
     <div className="py-20 w-full" id="experience">
@@ -45,8 +47,8 @@ const Experience = () => {
 
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
-                src={card.thumbnail}
-                alt={card.thumbnail}
+                src={`$basePath}/{card.thumbnail}`}
+                alt={`$basePath}/card.thumbnail}`}
                 className="lg:w-32 md:w-20 w-16"
               />
               <div className="lg:ms-5">

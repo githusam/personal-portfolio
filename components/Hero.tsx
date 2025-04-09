@@ -4,6 +4,8 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
