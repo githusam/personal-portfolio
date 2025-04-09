@@ -12,8 +12,6 @@ type Card = {
   thumbnail: string;
 };
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
@@ -84,7 +82,8 @@ const BlurImage = ({ card }: { card: Card }) => {
   const [loaded, setLoaded] = useState(false);
   return (
     <Image
-      src={`${basePath}/{card.thumbnail`}
+      src={card.thumbnail}
+      //   change image scale 500 to 100
       height="100"
       width="100"
       onLoad={() => setLoaded(true)}

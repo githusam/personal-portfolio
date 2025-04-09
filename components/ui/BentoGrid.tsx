@@ -11,8 +11,6 @@ import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
 export const BentoGrid = ({
   className,
   children,
@@ -106,7 +104,7 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           {img && (
             <img
-              src={`${basePath}/{img}`}
+              src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
             />
@@ -119,7 +117,7 @@ export const BentoGridItem = ({
         >
           {spareImg && (
             <img
-              src={`${basePath}/{spareImg}`}
+              src={spareImg}
               alt={spareImg}
               //   width={220}
               className="object-cover object-center w-full h-full"
