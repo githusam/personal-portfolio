@@ -79,13 +79,7 @@ export const projects = [
     title: "Large Language Model Analyzer",
     des: "A comprehensive tool for analyzing and visualizing large language models.",
     img: `${basePath}/p1.png`,
-    iconLists: [
-      "/re.svg",
-      "/tail.svg",
-      "/ts.svg",
-      "/pythonlogo.png",
-      "/gpt.png",
-    ],
+    iconLists: ["re.svg", "tail.svg", "ts.svg", "pythonlogo.png", "gpt.png"],
     link: "https://github.com/ArjunB3hl/prompt-app/tree/main",
   },
   {
@@ -93,7 +87,7 @@ export const projects = [
     title: "TMUsic - Music Social App",
     des: "A social media platform for music lovers to connect and share their tracks.",
     img: `${basePath}/p2.png`,
-    iconLists: ["re.svg", "php.svg", "tail.svg", "ts.svg", "/sql.png"],
+    iconLists: ["re.svg", "php.svg", "tail.svg", "ts.svg", "sql.png"],
     link: "https://github.com/vijaysatchi/tmu-music",
   },
   {
@@ -102,11 +96,11 @@ export const projects = [
     des: "A comprehensive urban management system for greenspaces.",
     img: `${basePath}/p3.png`,
     iconLists: [
-      "/re.svg",
-      "/javascript.png",
-      "/pythonlogo.png",
-      "/sql.png",
-      "/docker.png",
+      "re.svg",
+      "javascript.png",
+      "pythonlogo.png",
+      "sql.png",
+      "docker.png",
     ],
     link: "https://github.com/githusam/Greenspace-Management-System",
   },
@@ -115,7 +109,7 @@ export const projects = [
     title: "Weather Application",
     des: "A simple weather application that provides real-time weather updates.",
     img: `${basePath}/p4.png`,
-    iconLists: ["/re.svg", "/javascript.png", "/node.png"],
+    iconLists: ["re.svg", "javascript.png", "node.png"],
     link: "https://github.com/githusam/weather-app",
   },
 ];
@@ -192,19 +186,19 @@ export const workExperience = [
     title: "Fullstack Developer Intern @ Kenna",
     desc: "I worked on a project that involved  and maintaining a web application using React and Node.js. I was responsible for implementing the frontend and backend features, as well as integrating APIs. I also collaborated with the design team to ensure a seamless user experience. I learned a lot about web development best practices and gained valuable experience in working with a team.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "exp1.svg",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "git.svg",
     link: "https://github.com/githusam",
   },
   {
     id: 2,
-    img: "/link.svg",
+    img: "link.svg",
     link: "https://www.linkedin.com/in/husamkassab/",
   },
 ];
