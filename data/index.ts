@@ -76,7 +76,7 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Large Language Model Analyzer",
+    title: "LLM Analyzer",
     des: "A comprehensive tool for analyzing and visualizing large language models.",
     img: `${basePath}/p1.png`,
     iconLists: ["re.svg", "tail.svg", "ts.svg", "pythonlogo.png", "gpt.png"],
@@ -84,6 +84,14 @@ export const projects = [
   },
   {
     id: 2,
+    title: "License Plate Recognition",
+    img: `${basePath}/p6.png`,
+    des: "A system for recognizing license plates using deep learning.",
+    iconLists: ["pythonlogo.png", "yolo.svg", "opencv.png"],
+    link: "https://github.com/githusam/License-Plate-Detector", 
+  },
+  {
+    id: 3,
     title: "TMUsic - Music Social App",
     des: "A social media platform for music lovers to connect and share their tracks.",
     img: `${basePath}/p2.png`,
@@ -91,8 +99,8 @@ export const projects = [
     link: "https://github.com/vijaysatchi/tmu-music",
   },
   {
-    id: 3,
-    title: "Greenspace Management System",
+    id: 4,
+    title: "Greenspace Manager",
     des: "A comprehensive urban management system for greenspaces.",
     img: `${basePath}/p3.png`,
     iconLists: [
@@ -105,7 +113,7 @@ export const projects = [
     link: "https://github.com/githusam/Greenspace-Management-System",
   },
   {
-    id: 4,
+    id: 5,
     title: "Weather Application",
     des: "A simple weather application that provides real-time weather updates.",
     img: `${basePath}/p4.png`,
