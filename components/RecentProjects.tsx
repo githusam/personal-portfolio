@@ -12,7 +12,9 @@ const projectRoutes: Record<string, string> = {
   "2": "/projects/license",
   "3": "/projects/tmusic",
   "4": "/projects/greenspace",
-  "5": "/projects/weather-app",
+  "5": "/projects/robot-maze-solver",
+  "6": "/projects/weather-app",
+
 };
 
 const RecentProjects = () => {

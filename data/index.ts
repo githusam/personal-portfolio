@@ -12,7 +12,7 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "Code is only as strong as the teamwork behind it — clarity and collaboration come first.",
+      "I'm a software developer with a passion for building scalable and efficient systems.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -102,7 +102,7 @@ export const projects = [
     id: 4,
     title: "Greenspace Manager",
     des: "A comprehensive urban management system for greenspaces.",
-    img: `${basePath}/p3.png`,
+    img: `${basePath}/gms_schedule.png`,
     iconLists: [
       "re.svg",
       "javascript.png",
@@ -112,11 +112,21 @@ export const projects = [
     ],
     link: "https://github.com/githusam/Greenspace-Management-System",
   },
-  {
+   {
     id: 5,
+    title: "Robot Maze Solver",
+    des: "A robot that solves a maze using a microprocessor.",
+    img: `${basePath}/robot.png`,
+    iconLists: [
+      "assembly.png",
+    ],
+    link: "https://github.com/githusam/Greenspace-Management-System",
+  },
+  {
+    id: 6,
     title: "Weather Application",
     des: "A simple weather application that provides real-time weather updates.",
-    img: `${basePath}/p4.png`,
+    img: `${basePath}/weatherapp.png`,
     iconLists: ["re.svg", "javascript.png", "node.png"],
     link: "https://github.com/githusam/weather-app",
   },
@@ -192,7 +202,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Fullstack Developer Intern @ Kenna",
-    desc: "I worked on a project that involved  and maintaining a web application using React and Node.js. I was responsible for implementing the frontend and backend features, as well as integrating APIs. I also collaborated with the design team to ensure a seamless user experience. I learned a lot about web development best practices and gained valuable experience in working with a team.",
+    desc: `As a Full Stack Application Developer at Kenna Technology Solutions, I enhanced UI/UX based on user feedback to boost usability and engagement, developed and optimized RESTful APIs with Node.js and Express.js reducing response times by 25%, and designed efficient SQL database tables to improve query performance and data integrity. I collaborated with a large team using Git and Bitbucket to streamline workflows and maintain release schedules, and engineered responsive front-end components with React and Redux, reducing initial page load time by 20% and improving cross-device consistency. I learned a lot about web development practices and gained valuable experience in working with a team.`,
     className: "md:col-span-2",
     thumbnail: "exp1.svg",
   },

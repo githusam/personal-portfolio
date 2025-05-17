@@ -20,7 +20,7 @@ export default function WeatherAppPage() {
         
         <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
           <img
-            src={`${basePath}/p4.png`}
+            src={`${basePath}/weatherapp.png`}
             alt="Weather App"
             className="w-full h-full object-cover"
           />
@@ -38,7 +38,6 @@ export default function WeatherAppPage() {
               <li>Location-based forecasting</li>
               <li>Weather alerts and notifications</li>
               <li>Historical weather data</li>
-              <li>Interactive weather maps</li>
             </ul>
           </div>
 
