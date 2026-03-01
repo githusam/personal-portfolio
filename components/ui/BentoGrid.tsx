@@ -54,6 +54,16 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["Python", "SQL", "PHP"];
 
+  // Tech stack logo mapping
+  const techStackLogos: Record<string, string> = {
+    ReactJS: "/re.svg",
+    Express: "/node.png", // Using node.png as Express logo (Express is built on Node.js)
+    Typescript: "/ts.svg",
+    Python: "/pythonlogo.png",
+    SQL: "/sql.png",
+    PHP: "/php.svg",
+  };
+
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
@@ -72,7 +82,7 @@ export const BentoGridItem = ({
   };
 
   const handleDownload = () => {
-    const resumeUrl = "/Husam_Kassab_Resume.pdf"; // Path to your resume file in the public folder
+    const resumeUrl = "/HusamKassab_Resume.pdf"; // Path to your resume file in the public folder
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Husam_Kassab_Resume.pdf"; // Optional: Set the downloaded file name
@@ -154,29 +164,20 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
+            <div className="w-full h-full flex items-center justify-center px-4 py-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-4 w-full place-items-center">
+                {[...leftLists, ...rightLists].map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-3 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg bg-[#10132E] w-full max-w-[140px] flex items-center justify-center gap-2"
                   >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-3 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
+                    <img
+                      src={techStackLogos[item]}
+                      alt={item}
+                      className="w-5 h-5 lg:w-6 lg:h-6 object-contain"
+                    />
+                    <span className="text-left flex-1">{item}</span>
                   </span>
                 ))}
               </div>

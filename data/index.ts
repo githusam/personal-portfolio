@@ -53,7 +53,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building an LLM Analyzer",
+    title: "Open to full stack roles — let's build something great",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -201,10 +201,33 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Fullstack Developer Intern @ Kenna",
-    desc: `As a Full Stack Application Developer at Kenna Technology Solutions, I enhanced UI/UX based on user feedback to boost usability and engagement, developed and optimized RESTful APIs with Node.js and Express.js reducing response times by 25%, and designed efficient SQL database tables to improve query performance and data integrity. I collaborated with a large team using Git and Bitbucket to streamline workflows and maintain release schedules, and engineered responsive front-end components with React and Redux, reducing initial page load time by 20% and improving cross-device consistency. I learned a lot about web development practices and gained valuable experience in working with a team.`,
+    title: "Fullstack Developer @ Si Supplies",
+    desc: `• Developed a QuickBooks Online API integration using REST APIs, OAuth 2.0, and PHP, syncing live inventory, orders, and customer data across 100+ accounts and hundreds of products between in-store and online platforms
+
+• Built internal tools using React and Electron to manage inventory/customer data, improving operational efficiency
+
+• Integrated Net 14/30/60 payment terms and credit limits from QuickBooks using PHP, enabling approved accounts to purchase on credit and track outstanding balances through the website
+
+• Implemented role-based access control restricting pricing visibility and order placement to admin-approved users`,
+    className: "md:col-span-2",
+    thumbnail: "exp2.svg",
+    link: "https://sisupplies.ca",
+  },
+  {
+    id: 2,
+    title: "Fullstack Application Developer @ Kenna",
+    desc: `• Enhanced UI/UX based on user feedback to boost usability and engagement
+
+• Developed and optimized RESTful APIs with Node.js and Express.js, reducing response times by 25%
+
+• Designed efficient SQL database schemas to improve query performance and data integrity
+
+• Collaborated with a large team using Git and Bitbucket to streamline workflows and maintain release schedules
+
+• Engineered responsive front-end components with React and Redux, reducing initial page load time by 20% and improving cross-device consistency`,
     className: "md:col-span-2",
     thumbnail: "exp1.svg",
+    link: "https://kenna.ca",
   },
 ];
 
