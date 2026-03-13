@@ -82,7 +82,7 @@ export const BentoGridItem = ({
   };
 
   const handleDownload = () => {
-    const resumeUrl = "/HusamKassab_Resume.pdf"; // Path to your resume file in the public folder
+    const resumeUrl = "/Husam_Kassab_Resume.pdf"; // Path to your resume file in the public folder
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Husam_Kassab_Resume.pdf"; // Optional: Set the downloaded file name
