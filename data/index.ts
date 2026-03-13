@@ -201,20 +201,6 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Fullstack Developer @ Si Supplies",
-    desc: `• Developed a QuickBooks Online API integration using REST APIs, OAuth 2.0, and PHP, syncing live inventory, orders, and customer data across 100+ accounts and hundreds of products between in-store and online platforms
-
-• Built internal tools using React and Electron to manage inventory/customer data, improving operational efficiency
-
-• Integrated Net 14/30/60 payment terms and credit limits from QuickBooks using PHP, enabling approved accounts to purchase on credit and track outstanding balances through the website
-
-• Implemented role-based access control restricting pricing visibility and order placement to admin-approved users`,
-    className: "md:col-span-2",
-    thumbnail: "exp2.svg",
-    link: "https://sisupplies.ca",
-  },
-  {
-    id: 2,
     title: "Fullstack Application Developer @ Kenna",
     desc: `• Enhanced UI/UX based on user feedback to boost usability and engagement
 
